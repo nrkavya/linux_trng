@@ -1,0 +1,40 @@
+Assignment:
+1. mkdir Test
+
+2. cat >employeelist
+   cat >skillset
+
+3.mkdir Test2
+  ln -s skillset Sskillset
+  ln skillset hskillset
+   rm skillset
+cat Sskillset
+cat: Sskillset: No such file or directory
+cat hskillset
+A hard link acts as a copy of the selected file. It accesses the data available in the original file.
+A soft link acts as a pointer or a reference to the file name. It does not access the data available in the original file. 
+
+4. chmod g+r user2
+   chmod g+w user2
+5. chmod g-w user2
+6. chmod o+w skillset
+   ls -l
+-rw-rw-rw- 2 user16 user16    0 Oct 28 12:25 skillset
+
+7.chmod o-w skillset
+   ls -l
+-rw-rw-r-- 2 user16 user16    0 Oct 28 12:25 skillset
+
+8. mv employeelist user3
+cat user3
+
+9.chown user5 user3
+
+10.wc -l user3
+
+
+
+
+
+
+

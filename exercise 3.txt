@@ -1,0 +1,14 @@
+1> head -25 file1 | tail -15
+
+2> cat file3 | head -10 | tail -1
+
+3>ls -lt
+
+4>  ls -Sr | head -1
+
+
+5>  wc file3 -l
+
+
+6> find . -mtime -3
+

@@ -1,0 +1,68 @@
+1) cat >file1
+first line
+second line
+hi
+
+2) cat >>file1
+new line
+2
+3
+
+3) cat >file2
+hi
+good
+training
+how r u
+
+4) cat file1
+first line
+second line
+hi
+new line
+2
+3
+   cat file2
+hi
+good
+training
+how r u
+
+5) cat file1 file2 >file3
+user16@TrainingServer:~$ cat file3
+first line
+second line
+hi
+new line
+2
+3
+hi
+good
+training
+how r u
+
+6)cat file1 file2 file3 file4 file5
+
+7)cat file1 file2 file3 file4 file5 2>errlog
+
+     cat errlog
+cat: file4: No such file or directory
+cat: file5: No such file or directory
+
+8)cat file1 file5 >file10 2>errlog
+ cat errlog
+cat: file5: No such file or directory
+ cat file10
+first line
+second line
+hi
+new line
+2
+3
+
+
+9) cp file1 file6 2>errlog
+    cat errlog
+
+
+
+
