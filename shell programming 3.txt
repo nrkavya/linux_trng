@@ -1,0 +1,27 @@
+1)Accept a set of arguments from the user and find the largest of them.​ 
+
+maxEle=$1
+  2
+  3 for arg in "$@"
+  4 do
+  5     if [ "$arg" -gt "$maxEle" ]
+  6     then
+  7         maxEle=$arg
+  8     fi
+  9 done
+ 10 echo "Largest value among the arguments passed is: $maxEle"
+
+
+2) Accept numbers from the user till 0 is passed and add them.​
+
+3)Accept a filename from the user and for every word in the file display the word and the no of characters in it.
+
+ echo " enter your filename:"
+  2 read filename
+  3
+  4
+  5 result=$(cat $filename | wc -wc)
+  6
+  7 echo "Your file has $result characters"
+
+

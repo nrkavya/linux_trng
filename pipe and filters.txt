@@ -1,0 +1,20 @@
+slide 61
+1) grep "A*" file2
+
+2) grep "^The." file1
+
+3) grep "\.$" file1
+
+4) grep "[a-c]" file1
+
+5) grep "^de." file1
+
+6) grep '^[a-z]' file1
+
+7) grep '^$' file1
+ 
+8) find . -type d -name "d[0-9]" -print
+
+ 
+
+

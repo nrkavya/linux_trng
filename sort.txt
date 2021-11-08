@@ -1,0 +1,5 @@
+slide 63
+1) ls -l directoryPath > outputFile
+
+2) sort -r file1
+

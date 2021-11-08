@@ -1,0 +1,13 @@
+1) O- line above cursor
+
+2) 2dd- deleting the line
+   u-undo the change
+
+3) :/bc
+
+4) 6x
+
+5) :1,1s/c/C/g  
+
+6) :1,$s/ /\t
+ 

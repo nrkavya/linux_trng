@@ -1,0 +1,34 @@
+1)  echo "Enter Num1"
+  2 read num1
+  3 echo "Enter Num2"
+  4 read num2
+  5 echo "Enter Num3"
+  6 read num3
+  7
+  8 if [ $num1 -gt $num2 ] && [ $num1 -gt $num3 ]
+  9 then
+ 10     echo the greatest num is $num1
+ 11 elif [ $num2 -gt $num1 ] && [ $num2 -gt $num3 ]
+ 12 then
+ 13     echo the greatest num is  $num2
+ 14 else
+ 15     echo the greatest num is  $num3
+ 16 fi
+~
+
+
+2) echo -n "Enter file name : "
+  2 read file
+  3
+  4
+  5 [ -w $file ] && W="Write = yes" || W="Write = No"
+  6
+  7 [ -x $file ] && X="Execute = yes" || X="Execute = No"
+  8
+  9
+ 10 [ -r $file ] && R="Read = yes" || R="Read = No"
+ 11
+ 12 echo "$file permissions"
+ 13 echo "$W"
+ 14 echo "$R"
+ 15 echo "$X"

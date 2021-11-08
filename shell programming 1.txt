@@ -1,0 +1,43 @@
+1)Accept two numbers from the user do all arithmetic operations on them and write the output​
+echo "enter 2 numbers"
+  2 read a
+  3 read b
+  4 val=`expr $a + $b`
+  5 echo "a + b : $val"
+  6
+  7 val=`expr $a - $b`
+  8 echo "a - b : $val"
+  9
+ 10 val=`expr $a \* $b`
+ 11 echo "a * b : $val"
+ 12
+ 13 val=`expr $b / $a`
+ 14 echo "b / a : $val"
+ 15
+ 16 val=`expr $b % $a`
+ 17 echo "b % a : $val"
+~
+
+
+2) Accept two strings and display them as banner​
+
+ echo "enter 2 strings"
+  2 read str1
+  3 read str2
+  4 banner str1
+  5 banner str2
+
+3)Accept a username and send him a message if the user has logged in​
+
+echo "Who are you?"
+  2 read user
+  3 echo $user
+  4 name=$(whoami)
+  5 if[$user == $name]
+  6 then
+  7   top -u $user
+  8 else
+  9   echo "not logged in"
+ 10 fi
+
+ 
