@@ -1,0 +1,20 @@
+1) Accept a character from the user and display if it is a number or alphabet and others in case of any other character. Do this till the user enters empty value​
+
+
+ echo "enter a char"
+  2 read c
+  3 if [[ $c == [A-Z] ]];
+  4 then
+  5     echo "you have entered an alphabet"
+  6 elif [[ $c == [a-z] ]];
+  7 then
+  8     echo "you have entered an alphabet"
+  9 elif [[ $c == [0-9] ]];
+ 10 then
+ 11     echo "you have entered is a digit"
+ 12 else
+ 13     echo "you have entered a special symbols!"
+ 14 fi
+ 
+
+ 
